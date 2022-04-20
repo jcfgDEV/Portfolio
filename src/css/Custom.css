@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background-color: #1d1d1d;
+}
+
+
+/*CUSTOM BUTTON HOME*/
+
+.CustomBtn{
+    transition: ease-out 0.7s;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.CustomBtn::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top:0;
+    left: 0;
+    right:100%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #f9e506;
+}
+
+.CustomBtn:hover::before{
+    transition: all 0.5s ease;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.CustomBtn:hover{
+    color:black;
+}
+
+
+/*FIN*/
+
+
+
+/*SKILLS CSS STYLING*/
+
+  li{
+    list-style: none;
+  }
+
+  h1{
+    color: white;
+    font-size: 2rem;
+  }
+
+  span{
+    margin-bottom: 20px;
+  }
+
+  .bar{
+    width: 100%;
+    height: 7px;
+    background: #3f3f3f;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+  
+  }
+
+  .bar::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    animation: move 2s;
+  }
+
+  .bars1::before{
+    width: calc(90%);
+    background: rgb(51, 231, 48);
+  }
+
+  .bars2::before{
+    width: calc(30%);
+    background:  #f9e506;
+  }
+
+  .bars3::before{
+    width: calc(90%);
+    background: #234db8;
+  }
+
+  .bars4::before{
+    width: calc(50%);
+    background: #f9e506;
+  }
+
+  @keyframes move{
+    from{
+      max-width: 0%;
+    }
+    to{
+      max-width: 100%;
+    }
+  }
+
+
+  @media screen and (min-width:1024px){
+    .Ts{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+  }
+
+/**/
