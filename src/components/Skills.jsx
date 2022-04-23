@@ -8,7 +8,7 @@ function Skills() {
         <div>
           <h1 className="text-5xl text-white m-6 font-extrabold">Skills &</h1>
           <h1 className="text-5xl text-white m-6 font-extrabold">Experience</h1>
-          <p className="text-2xl text-gray-600  text-justify p-5">
+          <p className="text-2xl text-gray-400  text-justify p-5">
           I will be glad to show you my skills.
           The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features and coding interactive layouts.
           </p>

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind  components;
 @tailwind  utilities;
+
+@layer components  {
+    .ClassReducer{
+        @apply pl-6 p-3 w-72 md:w-96 rounded-full border-none placeholder:text-black font-extrabold text-lg bg-[#ECECEC] shadow-xl
+    }
+
+    .ClassTextarea{
+        @apply pl-6 p-3  w-72 md:w-96 h-40 rounded-lg placeholder:text-black font-extrabold text-lg bg-[#ECECEC] shadow-xl
+    }
+}

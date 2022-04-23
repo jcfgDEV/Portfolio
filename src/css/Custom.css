@@ -5,6 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+input{
+  outline: none;
+  text-decoration: none;
+}
+textarea{
+  outline: none;
+
 }
 
 body{
@@ -123,3 +133,7 @@ body{
   }
 
 /**/
+
+
+
+
