@@ -14,7 +14,7 @@ function Menu() {
     <>
       <nav className="bg-black w-full h-20 flex items-center justify-between flex-wrap">
         <div className="lex items-center cursor-pointer">
-          <Link to='/Portfolio'>
+          <Link to='/'>
             <img src={Im} alt='Logo' className="w-40"/>
           </Link>
         </div>
