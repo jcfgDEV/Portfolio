@@ -24,9 +24,9 @@ function Menu() {
 
         <div className={`${isActive ? 'block' : 'hidden'} z-10 w-full bg-black mt-2 block flex-grow lg:flex lg:items-center lg:w-auto`}>
            <div onClick={()=> setIsActive(!isActive)} className="lg:flex-grow">
-            <Link to='/Skills'  className="text-white m-2 text-2xl hover:text-green-400  flex  justify-center md:flex md:justify-center lg:inline-block items-center">Skills</Link>
-            <Link to='/About'   className="text-white m-2 text-2xl hover:text-green-400  flex  justify-center md:flex md:justify-center lg:inline-block items-center">About</Link>
-            <Link to='/Contact' className="text-white m-2 text-2xl hover:text-green-400  flex  justify-center md:flex md:justify-center lg:inline-block items-center">Contact</Link>
+            <Link to='/Portfolio/Skills'  className="text-white m-2 text-2xl hover:text-green-400  flex  justify-center md:flex md:justify-center lg:inline-block items-center">Skills</Link>
+            <Link to='/Portfolio/About'   className="text-white m-2 text-2xl hover:text-green-400  flex  justify-center md:flex md:justify-center lg:inline-block items-center">About</Link>
+            <Link to='/Portfolio/Contact' className="text-white m-2 text-2xl hover:text-green-400  flex  justify-center md:flex md:justify-center lg:inline-block items-center">Contact</Link>
            </div>
            <div className="mr-4">
              <a onClick={()=> setIsActive(!isActive) } href="https://www.linkedin.com/in/juan-fariñas/" target="_blank" rel="noopener noreferrer" className="flex justify-center md:flex md:justify-center items-center text-blue-600 text-3xl m-2 font-extrabold hover:text-white"> Linkedin </a>
