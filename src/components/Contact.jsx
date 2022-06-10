@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { db } from "../Firebase";
+import { db,collection,addDoc } from "../Firebase";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -24,15 +24,14 @@ function Contact() {
   const HandleSubmit = (e)  =>{
     e.preventDefault();
 
-    db.collection("Contact").add({
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
-
+    const user = addDoc(collection(db, "Contact"),{
+      name,
+      email,
+      subject,
+      message
     })
     .then(()=>{
-      console.log("Message Sent!");
+      console.log("Message Sent!", user);
     })
     .catch((error)=>{
       console.log(error.message);
