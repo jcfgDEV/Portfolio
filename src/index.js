@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Menu from './components/Menu';
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { HashRouter ,Routes,Route } from "react-router-dom";
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -13,7 +13,7 @@ import Skills from './components/Skills';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
     <Menu/>
     <Routes>
         <Route path="/Home" element={<Home />} />
@@ -21,7 +21,7 @@ root.render(
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Skills" element={<Skills />} />
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
