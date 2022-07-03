@@ -1,7 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
 function Home() {
+
   return (
       <>
         <div className="absolute m-24">
@@ -13,9 +15,8 @@ function Home() {
             <button className="bg-green-500 text-white text-3xl font-extrabold w-56 p-4 m-2 rounded-sm border-none outline-none  CustomBtn">Contact</button>
           </Link>
         </div>
-
       </>
   )
 }
 
-export default Home
+export default Home;

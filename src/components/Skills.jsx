@@ -13,7 +13,6 @@ function Skills() {
           The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features and coding interactive layouts.
           </p>
         </div>
-        
       </div>
       
       <div className='w-full p-5'>
