@@ -39,10 +39,10 @@ function Menu() {
           </div>
         </nav>
       <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/About" element={<About />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Skills" element={<Skills />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />}/>
+            <Route path="/Contact" element={<Contact />}/>
+            <Route path="/Skills" element={<Skills />}/>
       </Routes>
     </HashRouter>
     </>
